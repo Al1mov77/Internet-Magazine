@@ -4,6 +4,7 @@ export async function show(products) {
     box.innerHTML = "";
     products.forEach((prod) => {
         let div = document.createElement("div");
+                div.classList.add("div1")
         div.style.display = 'flex';
         div.style.flexDirection = 'column'; 
         div.style.alignItems = 'center';

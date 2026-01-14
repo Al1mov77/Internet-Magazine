@@ -1,0 +1,21 @@
+.div1{
+    position: relative;
+    transition: all 0.7s ease;
+    box-shadow: 0px 1px 1px blue;
+}
+.div1:hover{
+    box-shadow: 0px 10px 20px red;
+    top: -5px;
+}
+#n1:hover{
+    border-bottom: 1px solid blue;
+    transition: 0.4s;
+}
+#n2:hover{
+    border-bottom: 1px solid blue;
+    transition: 0.4s;
+}
+#n3:hover{
+    border-bottom: 1px solid blue;
+    transition: 0.4s;
+}
