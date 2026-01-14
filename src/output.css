@@ -570,11 +570,6 @@ video {
   margin: auto;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .ml-\[20px\] {
   margin-left: 20px;
 }
@@ -643,6 +638,10 @@ video {
   list-style-type: none;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -699,10 +698,6 @@ video {
   border-radius: 5px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .border-none {
   border-style: none;
 }
@@ -756,6 +751,11 @@ video {
      object-fit: contain;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-\[20px\] {
   padding: 20px;
 }
@@ -796,6 +796,14 @@ video {
   font-size: 50px;
 }
 
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[35px\] {
+  font-size: 35px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -818,6 +826,22 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[ec\] {
+  color: ec;
+}
+
+.text-\[center\] {
+  color: center;
+}
+
+.text-\[35x\] {
+  color: 35x;
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .transition-colors {
