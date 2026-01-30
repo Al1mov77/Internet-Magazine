@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
-     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-     <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
+
 <body class="bg-gradient-to-r from-[#210404] via-[#04091f] to-[#090d23] min-h-screen max-w-[1500px] m-auto">
-      <div class="flex justify-around p-[20px] items-center">
+  <div class="flex justify-around p-[40px] items-center">
     <img class="p-[30px] rounded-[30px]" src="img/Снимок_экрана_2026-01-13_225921-removebg-preview.png" alt="">
     <div class="list-none text-[white] flex gap-[60px] items-center">
       <a id="n1" href="index.html">Home</a>
       <a id="n2" href="products.html">Products</a>
-      <a id="n3" href="avoutus.html">About Us</a>
+      <a id="n3" href="aboutus.html">About Us</a>
     </div>
     <div class="flex gap-[10px]">
-         <img class="w-[40px] h-[40px] cursor-pointer" src="img/Снимок_экрана_2026-01-13_232310-removebg-preview.png" alt="">
+      <img id="karzina1" class="w-[40px] h-[40px] cursor-pointer" src="img/Снимок_экрана_2026-01-13_232310-removebg-preview.png" alt="">
     </div>
-      </div>
-       <p class="text-center text-center text-white text-[50px] font-bold font-serif">Our Products</p> <br> <br>
+  </div>
 
-<div class="p-[30px]">
-<select id="filterctg" class="w-[350px] h-[55px] ] rounded-[20px] p-[5px]">
-    <option value="All">All</option>
-    <option value="Mouse">Mouse</option>
-    <option value="Keyboard">Keyboard</option>
-    <option value="Headset">Headset</option>
-    <option value="MousePad">MousePad</option>
-</select>
+  <p class="text-center text-white text-[50px] font-bold font-serif">Our Products</p>
 
-</div>
-      <div id="box" class="flex flex-wrap justify-center gap-[30px]">
+  <div class="p-[30px]">
+    <select id="filterctg" class="w-[350px] h-[55px] rounded-[20px] p-[5px]">
+      <option value="All">All</option>
+      <option value="Mouse">Mouse</option>
+      <option value="Keyboard">Keyboard</option>
+      <option value="Headset">Headset</option>
+      <option value="MousePad">MousePad</option>
+    </select>
+    <input placeholder="Search Products.." class="w-[250px] h-[60px] rounded-[25px] p-[15px]" type="search" id="search">
+  </div>
 
+  <div id="box" class="flex flex-wrap justify-center gap-[30px]"></div>
 
-        
-       </div>
+  <dialog id="infoM" class="w-[450px] h-[400px] rounded-[20px] p-[40px] bg-[#c8c8ff]"></dialog>
 
-    <script type="module" src="JS/main.js"></script>
+  <dialog class="karzina2" style="width: 400px; height: 100vh; border: none; margin-left: 1100px; border-radius: 25px; background: linear-gradient(to right,rgb(255, 236, 236),rgb(221, 221, 255), white );">
+    <div style="padding: 30px;">
+      <h1 style="font-size: 40px;">Your Inventory: 👇</h1>
+      <div class="productsCart"></div>
+    </div>
+  </dialog>
+
+  <div id="cartBox"></div>
+
+  <script type="module" src="JS/main.js"></script>
 </body>
 </html>

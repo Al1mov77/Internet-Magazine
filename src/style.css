@@ -4,7 +4,7 @@
     box-shadow: 0px 1px 1px blue;
 }
 .div1:hover{
-    box-shadow: 0px 10px 20px red;
+    box-shadow: 0px 2px 2px red;
     top: -5px;
 }
 #n1:hover{
